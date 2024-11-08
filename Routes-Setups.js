@@ -129,5 +129,5 @@ app.delete('/Livros/Delete/:id', async (req, res) => {
 
 
 app.listen(3000, () => {
-    console.log('Server running on http://localhost:3000');
+    console.log('Server running on https://ex2-sir-2.onrender.com');
 });
