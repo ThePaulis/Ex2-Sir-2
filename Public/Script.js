@@ -6,7 +6,7 @@ window.onload = function() {
 
 //Main Scripts
 function GetLivros() {
-    fetch('http://localhost:3000/Livros')
+    fetch('https://ex2-sir-2.onrender.com/Livros')
         .then(response => response.json())
         .then(data => {
             console.log(data);
@@ -36,7 +36,7 @@ function GetLivros() {
 
 function GetLivrosById() {
     const id = document.getElementById('ProcurarId').value;
-        fetch(`http://localhost:3000/Livros/${id}`)
+        fetch(`https://ex2-sir-2.onrender.com/Livros/${id}`)
             .then(response => response.json())
             .then(data => {
                     console.log(data);
@@ -68,7 +68,7 @@ function CreateLivro() {
         Linguagem: document.getElementById('Linguagem').value
     };
 
-    fetch('http://localhost:3000/Livros/Create', {
+    fetch('https://ex2-sir-2.onrender.com/Livros/Create', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -97,7 +97,7 @@ const UpdatedLivro = {
     Linguagem: NewValues[3]
 
 }
-    fetch(`http://localhost:3000/Livros/Update/${id}`, {
+    fetch(`https://ex2-sir-2.onrender.com/Livros/Update/${id}`, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json'
@@ -116,7 +116,7 @@ const UpdatedLivro = {
 }
 
 function DeleteLivro(id){
-    fetch(`http://localhost:3000/Livros/Delete/${id}`, {
+    fetch(`https://ex2-sir-2.onrender.com/Livros/Delete/${id}`, {
         method: 'DELETE',
         headers: {
             'Content-Type': 'application/json'
@@ -167,10 +167,10 @@ function UpdateInputValue(id){
 }
 
 function aboutPage(){
-    window.location.href = 'http://localhost:3000/about';
+    window.location.href = 'https://ex2-sir-2.onrender.com/about';
 
 }
 function DocPage(){
-    window.location.href = 'http://localhost:3000/doc';
+    window.location.href = 'https://ex2-sir-2.onrender.com/doc';
 
 }
