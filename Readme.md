@@ -24,7 +24,7 @@ Além disso, a interface web permite adicionar, procurar, editar e excluir livro
 
 Este projeto está disponível para acesso na seguinte URL:
 
-- **URL do deploy**: [http://localhost:3000](http://localhost:3000) (localmente)
+- **URL do deploy**: https://ex2-sir-2.onrender.com (localmente)
 
 ## Dados Utilizados
 
@@ -185,4 +185,4 @@ npm start
 
 Acesse a aplicação no navegador:
 
-URL local: http://localhost:3000
+URL local: [http://localhost:3000](https://ex2-sir-2.onrender.com)
